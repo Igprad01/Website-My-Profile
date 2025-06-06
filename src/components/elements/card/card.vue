@@ -1,6 +1,6 @@
 <script setup>
-// import Heading from '../Heading/Heading.vue'
-// import Kalimat from '../Kalimat/Paragraph.vue'
+import Heading from '../Heading/Heading.vue'
+import Kalimat from '../Kalimat/paragraph.vue'
 // import Image from '../../image/Image.vue'
 
 defineProps({

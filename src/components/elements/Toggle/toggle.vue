@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+// import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons'
 
 // State: dark mode
 const isDarkMode = ref(false)

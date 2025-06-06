@@ -3,9 +3,8 @@
 // import AOS from 'aos'
 // import 'aos/dist/aos.css'
 
-import Heading1 from '../../Elements/Heading/Heading.vue'
-import Heading2 from '../../Elements/Heading/Heading.vue'
-import ExternalLink from '../../Elements/ExternalLink/Tautan.vue'
+import Heading from '../../elements/Heading/Heading.vue'
+import ExternalLink from '@/components/elements/ExternalLink/Tautan.vue'
 // import Image from '../../image/Image.vue'
 
 // onMounted(() => {

@@ -8,20 +8,20 @@ import Footer from '@/components/Layouts/Footer/Footer.vue'
 
 // import AOS from 'aos'
 // import 'aos/dist/aos.css'
-// import { onMounted } from 'vue'
+import { onMounted } from 'vue'
 
 // onMounted(() => {
 //   AOS.init()
 // })
 </script>
-
 <template>
-  <div class="font-montserrat">
+  <div>
     <Navbar />
-    <HeroSection />
+     <HeroSection /> 
     <About />
     <SectionProject />
     <Sertifikat />
     <Footer />
   </div>
 </template>
+

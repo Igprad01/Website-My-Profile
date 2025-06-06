@@ -58,7 +58,7 @@ const cards = ref([
   <div data-aos="fade-up" class="container mx-auto px-4 py-8 sm:px-6 lg:px-8" id="project">
     <Heading
       level = '1'
-      Text="Project"
+      text="Project"
       Styling="text-center text-xl capitalize mb-10 sm:text-2xl md:text-4xl lg:text-6xl"
     />
 

@@ -3,8 +3,10 @@
 // import AOS from 'aos'
 // import 'aos/dist/aos.css'
 
-import Heading1 from '../../Elements/Heading/Heading.vue'
-import Kalimat from '../../Elements/Kalimat/paragraph.vue'
+import Heading from '../../elements/Heading/Heading.vue'
+import Kalimat from '../../elements/kalimat/paragraph.vue'
+
+
 
 // // Inisialisasi AOS saat komponen dipasang
 // onMounted(() => {
@@ -20,7 +22,7 @@ import Kalimat from '../../Elements/Kalimat/paragraph.vue'
   >
     <Heading
       level = '1'
-      Text="About Me" 
+      text="About Me" 
       Styling="text-center mb-10 text-xl capitalize sm:text-2xl md:text-4xl lg:text-6xl" 
     />
     

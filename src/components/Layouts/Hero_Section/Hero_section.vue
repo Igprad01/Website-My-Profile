@@ -1,28 +1,27 @@
 <script setup>
-// import { ref, onMounted, onBeforeUnmount } from 'vue'
+import { ref, onMounted, onBeforeUnmount } from 'vue'
 // import AOS from 'aos'
 // import 'aos/dist/aos.css'
 
-import Heading1 from '../../Elements/Heading/Heading.vue'
-import Heading2 from '../../Elements/Heading/Heading.vue'
-import Kalimat from '../../Elements/Kalimat/paragraph.vue'
+import Heading from '../../elements/Heading/Heading.vue'
+import Kalimat from '../../elements/Kalimat/paragraph.vue'
 
 // Data dan state
 const TextRunning = ['front end developer', 'data engineer']
 const textIndex = ref(0)
 
-let intervalIndex = null
+let intervalId = null
 
-// onMounted(() => {
-//   AOS.init({ duration: 2000 })
+onMounted(() => {
+  // AOS.init({ duration: 2000 })
 
-//   intervalIndex = setInterval(() => {
-//     textIndex.value = (textIndex.value + 1) % TextRunning.length
-//   }, 1000)
-// })
+  intervalId = setInterval(() => {
+    textIndex.value = (textIndex.value + 1) % TextRunning.length
+  }, 2000) // ganti interval jadi 2 detik agar tidak terlalu cepat
+})
 
 onBeforeUnmount(() => {
-  if (intervalIndex) clearInterval(intervalIndex)
+  if (intervalId) clearInterval(intervalId)
 })
 </script>
 
@@ -34,19 +33,19 @@ onBeforeUnmount(() => {
   >
     <div>
       <Heading
-        level = '1'
-        Text="putra pradwi."
+        :level="1"
+        text="putra pradwi."
         Styling="font-bold text-3xl mb-10 capitalize sm:text-4xl lg:text-5xl mb-6"
       />
       <Heading
-        :level = '2'
-        :Text="TextRunning[textIndex]"
-        Styling="font-bold capitalize text-xl mb-10 sm:text-2xl lg:text-6xl mb-7"
+        :level="2"
+        :text="TextRunning[textIndex]"
+        Styling="font-bold capitalize text-xl mb-10 sm:text-2xl lg:text-6xl mb-7 transition-opacity duration-500 ease-in-out"
       />
       <div>
         <Kalimat
           teks="2 tahun berpengalaman dalam dunia programming, dimulai dengan PHP untuk membangun website dinamis, lalu beralih ke C++ guna mempelajari dasar-dasar pemrograman. Saat ini sedang fokus pada React JS, khususnya dalam pengembangan website front-end"
-          Styling="font-italic text-xl text-justify sm:text-xl text-start lg:text-2xl"
+          Styling="italic text-xl text-justify sm:text-xl text-start lg:text-2xl"
         />
       </div>
     </div>

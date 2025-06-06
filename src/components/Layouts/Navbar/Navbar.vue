@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-import NavbarList from '../../Elements/NavbarList/NavbarList.vue'
+import NavbarList from '../../elements/NavbarList/NavbarList.vue'
 
 const Open = ref(false)
 
